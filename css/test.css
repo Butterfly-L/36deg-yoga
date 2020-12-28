@@ -1,0 +1,233 @@
+:root {
+    --animate-duration: 2s;
+  }
+
+  html { overflow:auto; }
+
+  body{
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fffefc;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+  h2 {
+    color: #fffefc;
+  }
+
+  
+  
+  .hero {
+    height: 100vh;
+    background: url(../img/yogatest/test-background-1.png) center;
+    background-size: cover;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .green-rock::after,
+  .hero::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/yogatest/100-89-39.png);
+    animation: retake .2s infinite;
+    opacity: .5;
+    }
+    
+    
+    @keyframes retake {
+    
+      0{background-position:bottom;}
+      50%{background-position:center;}
+      100%{background-position:bottom;}
+      
+      }
+
+
+
+  .img-scope {
+    overflow: hidden;
+    height: 90%;
+  }
+  
+  .delete {
+    top: 32px;
+    right: 32px;
+  }
+  
+
+  
+  .content {
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 450px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .green-rock{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: url(../img/yogatest/test-background-2.png) center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+ 
+
+  }
+
+  .green-rock-first{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: url(../img/yogatest/test-background-3.png) center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+  }
+  
+  
+  
+  .last-sec-thermo::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4.6px;
+    left: -4px;
+    background: #fffefc;
+  }
+  
+  .last-sec-thermo {
+    /* width: 100%; */
+    height: 6px;
+    background: #fffefc;
+  }
+
+  .animation-wrapper{
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    overflow: hidden;
+  }
+  
+  .animation {
+    left: 50%;
+    transform: translate(0,-50%);
+    top: 30px;
+    /* z-index: 0; */
+  }
+
+  
+  
+  .animation img {
+    width: 1200px;
+    height: 1200px;
+    animation: rotate 10s linear infinite;
+  }
+
+  
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+    to {
+      transform: rotate(-360deg);
+      transform-origin: 50% 50%;
+    }
+  }
+  @keyframes rotate2 {
+    from {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+    to {
+      transform: rotate(360deg);
+      transform-origin: 50% 50%;
+    }
+  }
+  
+  .test-btn {
+    background: #fdebca;
+    color: #004a13;
+    width: 300px;
+    transition: 0.5s;
+    font-size:24px;
+    height: 45px;
+  }
+  
+  .test-btn:hover {
+    /* opacity: 0.6 !important; */
+    background:rgba(253, 235, 202,0.6);
+    color: rgba(0,74,19) !important;
+    transition: 0.5s;
+  }
+  
+  .text {
+    color: #d4d3d0;
+    font-size: 24px;
+    width: 500px;
+    margin: 2.75rem 0 7.125rem 0;
+  }
+  
+  .logo {
+    bottom: 32px;
+    left: 36px;
+  }
+  /* -----------手機版--------------- */
+  @media screen and (max-width: 992px) {
+    .delete {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      margin: 0;
+    }
+    .close svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .last-sec-thermo {
+      margin-left: 5rem !important;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .text {
+      margin-bottom: 52px;
+      width: 300px;
+      font-size: 16px;
+    }
+    .content{
+      top:40%;
+    }
+
+    .logo {
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .animation img {
+      height: 600px;
+      width: 600px;
+    }
+    .img-scope {
+      height: 100%;
+    }
+  }
+  

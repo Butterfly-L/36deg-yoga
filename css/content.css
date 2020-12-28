@@ -1,0 +1,937 @@
+:root {
+    --animate-duration: 2s;
+  }
+
+ 
+  
+  .for-nav {
+    height: 100px;
+  }
+  
+  h1,
+  h2 {
+    color: #004a13;
+  }
+
+
+
+  
+  .hero {
+    height: 48.75rem;
+    padding: 0 !important;
+  }
+  .hero-img {
+    background: url("../img/yogacontent/index_01_02.jpg") right 60% no-repeat;
+    filter: opacity(0.8);
+    background-size: 175%;
+    margin-bottom: 0;
+    height: 100%;
+    /* opacity: 1; */
+    /* animation: fadein 2s; */
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      /* background-size: contain;
+      background-position: 2000% 0; */
+    }
+    to {
+      opacity: 1;
+      /* background-size: cover;
+      background-position: 0% 0;} */
+    }
+  }
+  
+  .hero-text {
+    margin-top: 15.875rem;
+  }
+  
+  .hero-text-h1-mobile {
+    display: none;
+  }
+
+  .line-1{
+    border-right: 2px solid rgba(242,162,0,.75);
+    overflow: hidden;
+    white-space: nowrap;
+    animation:blinkTextCursor 500ms steps(7) infinite normal;
+  }
+  
+  
+  .anim-typewriter{
+    /* animation-delay: 1s; */
+    animation: typewriter 3s steps(7);
+              
+  }
+
+  @keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+  }
+
+  @keyframes blinkTextCursor{
+  from{border-right-color: rgba(242,162,0,.75);}
+  to{border-right-color: transparent;}
+  }
+
+  .hero .col-lg-8,
+  .hero .col-12,
+  .content-sec .col-lg-8,
+  .content-sec .col-12 {
+    padding: 0 !important;
+  }
+  
+  .scrolldown_btn {
+    margin-left: 500px;
+  }
+  
+  .scrollbox {
+    transition: 0.5s;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .scrollbox:hover {
+    transform: translateY(50px);
+  }
+  
+  .scroll_p {
+    font-family: "Josefin Sans", sans-serif;
+    color: #333333;
+    font-size: 1rem;
+    transform: rotate(90deg);
+    height: 40px;
+    margin-left: -12px;
+    width: 6rem;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .scrolldown_line {
+    height: 90px;
+    width: 2px;
+    background-color: #333333;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  
+  .hero-text-h1-desktop {
+    /* width: 500px; */
+    z-index: 1;
+    position: absolute;
+    left: 15px;
+  }
+  
+  .hero-text p {
+    margin-top: 5.625rem;
+  }
+  
+  .hero-text-span-mobile {
+    display: none;
+  }
+  
+  .hero-text-span-desktop {
+    margin-top: 5.625rem;
+    display: inline-block;
+  }
+  /* content區塊共同地方 */
+  
+  .content-sec {
+    height: 42.375rem;
+    padding: 0 !important;
+  }
+  
+  .text-wrap {
+    width: 21.375rem;
+  }
+  
+  /* 第一個conetnet區塊 */
+  .sec1-img {
+    background: url("../img/yogacontent/content02.jpg") center left no-repeat;
+    background-size: cover;
+  }
+  .sec1-text {
+    background: url("../img/yogacontent/content_bg.png");
+    height: 100%;
+    background-size: 50%;
+    background-attachment: fixed;
+  }
+  
+
+  /* tag */
+  .text-wrap {
+    z-index: 1;
+
+  }
+  
+  .text-wrap h2 {
+    margin-bottom: 1.6875rem;
+  }
+  
+  .text-wrap span {
+    margin-top: 3.375rem;
+  }
+  
+  .tag-wrapper {
+    margin-bottom: 2.5rem;
+  }
+  
+  .tag-line {
+    width: 8px;
+    height: 25px;
+    background-color: #f2a200;
+    border-radius: 1px;
+    top: 0;
+    left: 0;
+    margin-right: 0.875rem;
+  }
+  
+  .tag h6 {
+    font-size: 24px !important;
+    color: #f2a200;
+  }
+  /* 第2個區塊的內容 */
+  .sec2-img {
+    background: url("../img/yogacontent/content03.jpg") center bottom no-repeat;
+    background-size: cover;
+  }
+  .sec2-text {
+    background: url("../img/yogacontent/content_bg.png");
+    height: 100%;
+    background-size: 50%;
+    background-attachment: fixed;
+  }
+  /* 熱門商品 */
+  .content-product {
+    height: 48.5rem;
+    background: #f2a200;
+    overflow: hidden;
+  }
+  
+  .text-center {
+    margin-top: 5rem;
+  }
+  
+  h3 {
+    color: #004a13;
+    font-size: 2.5rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  a {
+    color: #333333;
+  }
+  
+  a:hover {
+    color: #db5c00;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* 猜你喜歡 推薦商品 ↓↓  */
+ 
+  
+  .product-info {
+    color: #848484;
+  }
+
+  
+  .guessyoullike1 .img-wrap
+  ,.guessyoullike .img-wrap {
+    width: 226px;
+    height: 295px;
+    margin: 60px 0 30px 0;
+    overflow: hidden;
+  }
+  
+  .product-wrap {
+    /* height: 378px; */
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .product-pic {
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .product-info {
+    margin-top: 0 !important;
+  }
+  
+  .product-info p {
+    color: #333333;
+  }
+  
+  .icon-wrap {
+    display: none !important;
+  }
+  
+  .btn_f {
+    width: 21.375rem ;
+    margin: 60px 0 60px 0;
+    transition: 0.5s;
+  }
+  
+  .btn_more{
+    width: 21.375rem!important;
+  
+  }
+  
+  .btn_f:hover {
+    opacity: 0.6s !important;
+  }
+  
+  .btn-product:hover {
+    opacity: 0.6s !important;
+  }
+  
+  
+  .product-zone1:hover h6{
+    color: #db5c00;
+    transition:0.5s;
+
+  }
+  .product-zone1:hover p{
+    color: #db5c00;
+    transition:0.5s;
+
+  }
+
+
+  .product-zone1:hover .img-wrap img{
+    transform: scale(1.05);
+    transition:0.5s;
+
+  }
+
+  .product-zone:hover .img-wrap img{
+    transform: scale(1.05);
+    transition:0.5s;
+
+  }
+
+
+
+  .product-zone:hover h6{
+    color: #db5c00;
+    transition:0.5s;
+
+  }
+  .product-zone:hover p{
+    color: #db5c00;
+    transition:0.5s;
+
+  }
+
+  .guessyoullike1 h6,
+
+  .guessyoullike h6{
+    color: #333333;
+  }
+  
+  /* 猜你喜歡 推薦商品 ↑↑ */
+  
+  /* 最後一個區塊  */
+  .last-sec {
+    height: 56.25rem;
+    padding: 0 !important;
+  }
+  
+  .last-sec h1 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .last-sec-img {
+    background: url("../img/yogacontent/content01.jpg") right bottom no-repeat;
+    background-size: cover;
+
+  }
+  
+  .last-sec {
+    padding: 0 !important;
+  }
+  
+  .last-sec h3 {
+    color: #333333;
+  }
+  
+  .last-sec-text-wrap {
+    margin-top: 9rem;
+  }
+  
+  .last-sec-thermo::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4.6px;
+    left: -4px;
+    background: #db5c00;
+  }
+  
+  .last-sec-thermo {
+
+    height: 6px;
+    background: #db5c00;
+  }
+ 
+  .last-sec-text {
+    margin-top: 7.5rem;
+    margin-bottom: 60px;
+  }
+  
+  .btn_l {
+    margin-top: 3.75rem;
+    width: 220px;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  .srolldown_btn_mobile {
+    display: none !important;
+  }
+  
+  .hero-text-h1,
+  .hero-text-span-desktop {
+    margin-left: -30px;
+  }
+  
+  .hero-text-span-desktop {
+    width: 110%;
+  }
+  
+  .hero {
+    height: 800px;
+  }
+  
+  /*Footer*/
+  .footer {
+    padding: 4rem 0 0 0;
+    /* background-color: #004a13; */
+    background: url(../img/index_back02.jpg);
+    background-size: cover;
+  }
+  .footer_big_title {
+    color: #f2a200;
+  }
+  .footer_small_title {
+    color: #fffefc;
+  }
+  .foot-info3 p {
+    color: #fffefc;
+  }
+  .footer_title_wrap {
+    color: #fffefc;
+  }
+  .social-icon {
+    margin-left: 30px;
+  }
+  
+  .dividerline {
+    margin: 10px 0 0 0.5px;
+    width: 100%;
+    height: 0.1px;
+    border: solid 1px #fffefc;
+    border-radius: 1px;
+    background-color: #fffefc;
+  }
+  .copyright {
+    color: #f2a200;
+  }
+  .foot-info2 {
+    padding-left: 4rem;
+    margin-right: 50px;
+  }
+  .foot-info3 {
+    padding-left: 90px;
+  }
+  #foot-info1 {
+    margin-right: 60px;
+  }
+  
+  @media (max-width: 576px) {
+    .foot-info2 {
+      margin-top: 30px;
+      padding-left: 15px;
+    }
+    .foot-info3 {
+      margin-top: 30px;
+      padding-left: 15px;
+    }
+    .social-icon {
+      margin-left: 18px;
+    }
+    .social-icon img {
+      width: 28px;
+      height: 28px;
+    }
+    .footer-logo img {
+      width: 100px;
+    }
+    .mobile-display-none {
+      display: none;
+    }
+  }
+  .btn-ani {
+    position: relative;
+    width: 342px !important;
+    height: 38px !important;
+    background-color: #004a13 !important;
+    border-radius: 4px !important;
+    padding: 2px;
+    animation: oxxo ease-in-out 5s infinite;
+    border: 0 transparent !important;
+    /* background-clip: padding-box; */
+}
+
+.btn2 {
+
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    /* background: #fffefc; */
+    border-radius: 2px;
+    color: #fffefc;
+}
+
+.btn2 span {
+
+    background-color: #004a13;
+    animation: oxxo ease-in-out 5s infinite;
+    -webkit-text-fill-color: transparent;
+    color: #fffefc !important;
+
+
+
+}
+
+
+@keyframes oxxo {
+    from {
+        background-image: -webkit-linear-gradient(top left,
+                rgba(242, 162, 0, 0.0) 0%,
+                rgba(242, 162, 0, 0.0) 45%,
+                rgba(242, 162, 0, 0.3) 48%,
+                rgba(242, 162, 0, 0.5) 50%,
+                rgba(242, 162, 0, 0.3) 52%,
+                rgba(242, 162, 0, 0.0) 57%,
+                rgba(242, 162, 0, 0.0) 100%);
+
+        background-position: -500px -500px;
+        background-size: 800px 800px;
+        background-repeat: no-repeat;
+
+    }
+
+    to {
+        background-repeat: no-repeat;
+        background-position: 150px 150px;
+    }
+
+
+
+}
+
+  
+  /*try*/
+  
+  /* ------------------------------------------手機版 */
+  /* ------------------------------------------手機版 */
+  /* ------------------------------------------手機版 */
+  /* ------------------------------------------手機版 */
+  
+  @media screen and (max-width: 992px) {
+    .btn-ani {
+      width: 18rem !important;
+  }
+    /* 992 */
+    .for-nav {
+      height: 75px;
+    }
+  
+    .hero {
+      height: auto;
+      align-items: flex-start;
+    }
+  
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  
+    .srolldown_btn_mobile {
+      display: inline-block !important;
+      order: 3;
+      height: 22rem;
+      /* transform: rotate(90deg); */
+  
+      /* height: 26.6875rem; */
+    }
+  
+    .srolldown_btn_mobile_h {
+      transform: translateY(50px);
+    }
+  
+    .scroll_p_mobile {
+      font-family: "Josefin Sans", sans-serif;
+      color: #333333;
+      font-size: 1rem;
+      transform: rotate(90deg);
+      height: 40px;
+      margin-left: -12px;
+      width: 6rem;
+      /* vertical-align: middle;*/
+      position: absolute;
+      bottom: 4.5rem;
+    }
+  
+    .scroll_p_mobile::after {
+      content: "";
+  
+      position: absolute;
+      height: 90px;
+      width: 2px;
+      background-color: #333333;
+      transform: rotate(-90deg);
+      transform-origin: top;
+      left: 100%;
+      top: 30%;
+    }
+  
+    .srolldown_btn_desktop {
+      display: none !important;
+    }
+  
+    .hero-text {
+      order: 2;
+      padding-left: 2.25rem;
+      margin-top: 3.125rem;
+      padding-left: 2.25rem;
+      height: 20rem;
+    }
+  
+    .hero-text-span-mobile {
+      margin-top: 3.125rem;
+      display: inline-block;
+    }
+  
+    .hero-text-span-desktop {
+      display: none;
+    }
+  
+    .hero-img {
+      order: 1;
+      height: 20.625rem;
+      background-position: right 70%;
+      margin-bottom: 0;
+    }
+  
+    .hero-text-h1 {
+      position: relative;
+      width: 100%;
+    }
+    .hero-text-h1-mobile h1 {
+      left: 0;
+    }
+  
+    .hero-text-h1-mobile {
+      display: inline-block;
+    }
+  
+    .hero-text-h1-desktop {
+      display: none;
+    }
+  
+    /* 手機版內容區---------------- */
+    .content-sec {
+      height: auto !important;
+      padding: 0 0 60px 0 !important;
+      /* background: url("./img/06_content/content_04.png"); */
+      height: 100%;
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+    .content-sec::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+  
+      opacity: 0.3;
+    }
+  
+    .sec1-text::before,
+    .sec2-text::before {
+      background-color: transparent;
+    }
+  
+    .text-wrap {
+      height: 21.875rem;
+      margin: 0 1.3125rem;
+    }
+  
+    .text-wrap h2 {
+      margin-top: 2.375rem;
+      margin-bottom: 15px;
+    }
+  
+    .sec1-text,
+    .sec2-text {
+      background: none;
+      background-size: 100%;
+    }
+  
+    .text-wrap p {
+      margin-top: 1rem;
+      margin-bottom: 60px;
+    }
+  
+    .sec2-img,
+    .sec1-img {
+      height: 20.625rem;
+    }
+  
+    .sec2-text {
+      order: 2;
+    }
+  
+    .sec2-img {
+      order: 1;
+    }
+    /* --------手機版熱門商品區-------- */
+    .icon-left:active,
+    .icon-right:active{
+      transform: scale(.8);
+    }
+
+    .icon-left1:active,
+    .icon-right1:active{
+      transform: scale(.8);
+    }
+
+
+
+    .content-product {
+      height: 42rem;
+      padding: 0 0 50px 0 !important;
+    }
+  
+    .content-product .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      height: 33rem;
+    }
+  
+    .text-center {
+      margin-top: 60px;
+    }
+  
+    .container-fluid {
+      overflow: hidden;
+    }
+    
+  
+    .guessyoullike1,.guessyoullike {
+      
+      position: absolute;
+      justify-content: none !important;
+      left: 0;
+    }
+
+    .transition{
+      transition: 0.5s;
+    }
+  
+    .img-wrap {
+      margin: 40px 0 30px 0;
+      overflow: hidden;
+    }
+  
+
+  
+    .icon-wrapper {
+      width: 100%;
+    }
+  
+    .icon-wrap {
+      display: flex !important;
+      position: absolute;
+      width: 100%;
+      justify-content: space-between;
+      left: 0px;
+      top: 287.5px;
+      padding: 0 12px;
+      z-index: 1;
+    }
+  
+    .btn_f {
+      width: 18rem;
+    }
+  
+    .btn_more{
+      width: 18rem!important;
+  
+    }
+  
+    /* scroll down 按鈕 */
+    .scrolldown_btn {
+      margin-left: 500px;
+      transform: translateY(500px);
+      cursor: pointer;
+      animation-duration: 1s;
+      animation-delay: 5s;
+    }
+  
+    .scrollbox {
+      height: 400px;
+      margin-left: 35px;
+      transition-duration: 0.3s;
+      cursor: pointer;
+      margin-top: 250px;
+    }
+  
+    .scrolldown_btn_h {
+      height: 80px;
+      margin-left: 35px;
+      transition-duration: 0.3s;
+      cursor: pointer;
+    }
+  
+    .scrollbox_h {
+      height: 80px;
+      /* margin-left: 35px;
+          transition-duration: .3s;
+          cursor: pointer; */
+    }
+  
+    .scroll_p {
+      font-family: "Josefin Sans", sans-serif;
+      color: #333333;
+      font-size: 1.2rem;
+      transform: rotate(90deg);
+      height: 40px;
+      margin-left: -55px;
+      margin-top: 100px;
+    }
+  
+    .scrolldown_line {
+      height: 300px;
+      width: 2px;
+      background-color: #333333;
+      margin-top: 50px;
+    }
+  
+    /* -----手機版最後一個區塊----- */
+  
+    .last-sec {
+      height: 55rem;
+    }
+  
+    .last-sec-img {
+      height: 20.625rem;
+      order: 1;
+      margin-bottom: 0;
+      margin-left: 2.25rem;
+    }
+  
+    .last-sec-content {
+      order: 2;
+    }
+  
+    .last-sec-text-wrap {
+      margin-top: 2.5rem;
+      padding-left: 2.25rem;
+    }
+    .last-sec-text {
+      margin-top: 3.75rem;
+      margin-bottom: 30px;
+    }
+  
+    .mobile {
+      display: block;
+    }
+  
+    .desktop {
+      display: none;
+    }
+  
+    .last-sec-btn {
+      padding-right: 2.25rem;
+    }
+  
+    .last-sec-btn button {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* scroll down 按鈕 */
+    .scrolldown_btn {
+      display: none;
+    }
+  
+    .scrollbox {
+      display: none;
+    }
+  
+    .scrolldown_btn_h {
+      display: none;
+    }
+  
+    .scrollbox_h {
+      display: none;
+    }
+  
+    .scroll_p {
+      display: none;
+    }
+  
+    .scrolldown_line {
+      display: none;
+    }
+  
+    .hero-text-h1-mobile h1 {
+      font-size: 3rem;
+      margin-left: 30px;
+    }
+  
+    .hero-text-span-mobile {
+      margin-top: 20px;
+    }
+  
+    .text-wrap {
+      padding-left: 10px;
+      padding-top: 20px;
+    }
+  
+    .last-sec {
+      height: 58.5rem;
+    }
+  }
+  
+  /* footer */
+  .footer .col12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+ 
+  
