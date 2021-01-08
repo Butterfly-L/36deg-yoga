@@ -22,9 +22,8 @@ function goBack(){
 
     }
 
-    if (countQ == 5){
-        
-        window.location.href="../yogatest-result.html";
+    if (countQ == 5){     
+        window.location.href="https://butterfly-l.github.io/36deg-yoga/yogatest-result.html";
     }
 
 
