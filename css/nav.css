@@ -122,6 +122,10 @@
   border: 0;
   line-height: 40px!important;
   }
+
+  .nav-left .btn-group:nth-child(3) .dropdown-menu{
+    left:-24px!important;
+  }
   
   
   

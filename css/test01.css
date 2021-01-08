@@ -1,0 +1,490 @@
+:root {
+    --animate-duration: 2s;  
+    }
+
+.hero{
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* ----叉叉和logo---- */
+.delete{
+height: 80px;
+width: 92%;
+right: 0;
+top:0;
+/* animation:content 1.5s linear; */
+opacity: 1;
+}
+
+.close {
+margin: 1.875rem 1.875rem 0 0;
+
+/* margin: -1rem -1rem -1rem auto; */
+}
+
+.close-mobile{
+    display:none;
+}
+
+.logo{
+width: 198px;
+height: 47px;
+padding: 34px 0 0 45px;
+margin-right: auto;
+}
+
+/* ---內文 ---------- */
+
+.content-wrapper{
+    width: 82%;
+    height: 100vh;
+    background: #FFFEFC;
+    left: 9%;
+    opacity: 1;
+    
+}
+
+.content-wrapper .ani{
+    animation:content .5s linear;
+}
+
+@keyframes content{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+
+.content{
+    margin-top:10%;
+    width: 84%;
+    
+    
+}
+
+.content-title{
+    height: 20%;
+
+}
+
+.choice-next button{
+    width: 8.125rem;
+    transition:.5s;
+
+}
+
+form{
+    padding-top:40px;
+}
+
+.btn_f:hover{
+    opacity: 0.5s!important;
+
+}
+
+
+.btn-wrapper{
+    width: 100%;
+    padding: 0 21%;
+    /* height: 47%; */
+    min-height: 400px;
+}
+
+.btn-wrap{
+    height: 5rem;
+}
+
+.alert{
+    color:#db5c00;
+    height: 16px;
+}
+
+
+
+.choice{
+    width: 14rem;
+    
+    
+}
+
+.choice.clicked{
+    background:#004A13;
+    color:white;
+}
+
+.choice-next{
+    height: 22%;
+    padding-bottom: 7.5rem;
+}
+
+.result-err{
+    width: 8.125rem;
+}
+
+
+/* -------進度條 */
+.pro-bar{
+    width: 16%;
+    margin: 9% 0 12%;
+}
+
+/* 溫度計 */
+
+.ther-desktop{
+    display: block;
+}
+
+.ther-mobile{
+    display: none!important;
+}
+
+
+.thermometer_container {
+    
+    height: 100%;
+    width: 24px;
+    /* 18投的高度+8-->留尾巴 */
+}
+
+.thermometer_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.thermometer {
+    width: 100%;
+    top: 0;
+    /* left:0.05px; */
+}
+
+.thermometer_line {
+    height: 100%;
+    width: 12px;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+.thermometer_move {
+    width: 100%;
+    height: calc(20% + 18px);
+    background-color: #F2A200;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.pro-number{
+    padding-top: 18px;
+    height: 100%;
+    
+    /* 頭飾18px */
+}
+
+.number{
+    height: 20%;
+}
+
+.number span{
+    transform: rotate(90deg);
+    transform-origin: top;
+}
+
+/*-----------mobile --------*/
+
+@media screen and (max-width:992px){
+.content-wrapper{
+    width: 100%;
+    left:0;
+    background: url(../img/yogatest/testq_mobile_bg.png) no-repeat;
+    background-size: 210%;
+    background-position: 40% 110%;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 24px;
+    margin-top: 40px!important;
+}
+
+.btn-wrapper{
+    min-height:300px;
+}
+
+.delete{
+    width: 100%;
+}
+
+.close{
+    position: absolute;
+    left:20px;
+    top:20px;
+    margin:0;
+}
+
+.close-desktop{
+    display: none;
+}
+
+.close-mobile{
+    display:inline-block;
+}
+
+
+.pro-bar{
+    width: 100%;
+    margin: 7.5rem 0 2rem 0;
+    /* flex-wrap: wrap; */
+    flex-direction: column!important;
+    justify-content: center!important;
+    /* padding-top:50px; */
+    height: 35px;
+}
+
+.pro-number{
+    height: auto;
+    display: flex;
+    width: 325px;
+    margin: 0 auto!important;
+    order:2;
+}
+
+.number span{
+    transform: rotate(0deg);
+}
+
+.logo{
+      display: none;
+    }
+
+.thermometer_container {
+    margin: 0 auto;
+    height: 20px;
+    width: 343px;
+    /* 325+18px */
+    order:1;
+}
+
+.ther-desktop{
+    display: none!important;
+}
+
+.ther-mobile{
+    display: block!important;
+}
+
+.thermometer_wrap {
+    height: 20px;
+    position: relative;
+}
+
+.thermometer {
+    position: absolute;
+    height: 100%;
+    
+    left: -50%;
+    top: -25%;
+}
+
+.thermometer_line {
+    width: 100%;
+    height: 10px;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px;
+    padding: 1.6px;
+
+}
+
+.thermometer_move {
+    height: 100%;
+    width: 25%;
+    background-color: #f2a200;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.content{
+    width: 100%;
+}
+
+.btn-wrapper{
+    padding: 0;
+}
+
+form{
+    padding-top:0px;
+}
+
+.number{
+    height: 30px;
+    width: 65px;
+}
+
+.content{
+    margin-top: 0;
+}
+
+.content-title{
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.btn-wrapper{
+    align-content: center!important;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.btn-wrap{
+    padding:0!important;
+}
+
+.choice{
+    margin: 0 10px!important;
+}
+
+.result-err{
+    width: 130px;
+    margin: 0 10px!important;
+}
+
+.choice-next{
+    padding-top:16px;
+
+}
+
+}
+
+/* ----石頭動畫--------------------------- */
+
+
+.orange-rock,
+.yellow-rock,
+.green-rock{
+    transform:scale(1.5); 
+            
+}
+
+.yellow-rock{
+    left: 50%;
+    top: -10%; 
+}
+
+
+.green-rock{
+    left: -50%;
+    top: -50%;            
+}
+
+
+
+.orange-rock{
+    left:-30%;
+    top: 70%;
+}
+
+.yellow-rock-ani{
+    animation:yellowrock 1s linear;
+
+}
+
+.green-rock-ani{
+    animation: greenrock 1s linear;
+}
+
+.orange-rock-ani{
+    animation:orangerock 1s linear;
+
+}
+
+@keyframes yellowrock{
+    0%{
+        /* transform: rotate(360deg); */
+        /* transform-origin: top; */
+        left: 10%;
+        top: -20%;
+        transform:scale(.1); 
+        
+    }
+
+    50%{
+        transform: rotate(360deg);
+        /* transform-origin: top; */
+        left: 20%;
+        top: -30%;
+        transform:scale(.5); 
+        
+    }
+
+    100%{
+        transform: rotate(0deg);
+        /* transform-origin: top; */
+        left: 50%;
+        top: -10%; 
+        transform:scale(1.5); 
+       
+    }
+}
+
+@keyframes greenrock{
+    0%{
+   
+        left: 10%;
+        top: -20%;
+        transform:scale(.1); 
+        
+    }
+
+    50%{
+        transform: rotate(180deg);
+        left: 20%;
+        top: 10%;
+        transform:scale(.8); 
+            
+        }
+
+    100%{
+        transform: rotate(0deg);
+        left: -50%;
+        top: -50%;
+        transform:scale(1.5); 
+       
+    }
+    
+}
+
+@keyframes orangerock{
+    0%{
+        transform: rotate(360deg);
+        left: 10%;
+        top: -20%;
+        transform:scale(0.1); 
+        
+    }
+
+    50%{
+        transform: rotate(180deg);
+        left: 20%;
+        top: 10%;
+        transform:scale(1); 
+            
+        }
+
+    100%{
+        transform: rotate(0deg);
+        left:-30%;
+        top: 70%;
+        transform:scale(1.5); 
+       
+    }
+}
+   
+
+
