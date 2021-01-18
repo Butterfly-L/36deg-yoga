@@ -8,9 +8,9 @@ function goBack(){
 
     // 看做到第幾題了
     let data = JSON.parse(localStorage.getItem('listData')) || [];
-    let testAns = JSON.parse(localStorage.getItem('listData')) || [];
-    let countQ = testAns.length;
-    // let prevQ = countQ;
+    // let testAns = JSON.parse(localStorage.getItem('listData')) || [];
+    let countQ = data.length;
+    
     console.log('data:'+data);
 
     if(!countQ){
@@ -22,11 +22,13 @@ function goBack(){
 
     }
 
+    // if(countQ < 5){
+    //     window.location.href="yogatest-q.html";
+    // }
+
     if (countQ == 5){     
-        window.location.href="https://butterfly-l.github.io/36deg-yoga/yogatest-result.html";
+        window.location.href="yogatest-result.html";
     }
-
-
 
 
 
@@ -72,58 +74,79 @@ function goBack(){
 //test Questions
 const myQuestions = [
     {
-    question: "1.請問你的身高？",
+    question: "1.有做過瑜珈嗎？",
     ans: {
-    "170 cm 以下": "180",
-    "170-180 cm": "180",
-    "180 cm 以上": "215"
+    "完全沒有": "初學瑜珈",
+    "有一點基礎": "有一點基礎的你",
+    "瑜珈經驗者": "有瑜珈經驗的你"
         }
     },
-
+    
     {
-        question: "2.請問你做瑜珈的目的？",
-        ans: {
-        "健身或瘦身":"達到最佳健身效果",
-        "放鬆減壓":"得到最深層的放鬆",
-        "修復傷口":"得到最深層的放鬆",
-        "柔軟度":"有最深層的伸展",
-        "增強肌耐力":"達到最佳健身效果",
-        "改善身體循環":"能夠穩定、改善循環",
-        "調節呼吸":"能夠抓穩節奏、調節呼吸",
+    question: "2.為什麼想做瑜珈呢？",
+    ans: {
+        "健身，增強肌耐力":{
+            
+            "比較靜態":{
+                "完全沒有":"流瑜珈",
+                "有一點基礎":"阿斯坦加瑜珈",
+                "瑜珈經驗者":"阿斯坦加瑜珈"
+            },
+            "動態，但不希望流太多汗":{
+                "完全沒有":"流瑜珈",
+                "有一點基礎":"阿斯坦加瑜珈",
+                "瑜珈經驗者":"阿斯坦加瑜珈"
+            },
+            "動態，想要爆汗":"熱瑜珈",
+        },
+        "調節呼吸，放鬆減壓":{
+            
+            "比較靜態":"陰瑜珈",
+            "動態，但不希望流太多汗":"流動瑜珈",
+            "動態，想要爆汗":"流動瑜珈",
+        },
+        
+        "修復傷口":"修復瑜珈",
+        "增加柔軟度，改善循環":{
+            
+            "比較靜態":"陰瑜珈",
+            "動態，但不希望流太多汗":"流動瑜珈",
+            "動態，想要爆汗":"流動瑜珈",
+        },
+       
         },
     },
 
+    {
+        question: "3.希望做哪一類的瑜珈？",
+        ans: {
+            "比較靜態":"",	
+            "動態，但不希望流太多汗":"",	
+            "動態，想要爆汗":"",	
+        },
+        },
+
+
+    
 
     {
-        question: "3.常做瑜珈的種類？",
+        question: "4.希望做瑜珈的地點？",
         ans: {
-            "哈達瑜珈":"做哈達瑜珈",	
-            "阿斯坦加瑜珈":"做阿斯坦加瑜珈",	
-            "和緩瑜珈":"做和緩瑜珈",	
-            "動瑜珈":"做動瑜珈",	
-            "陰瑜珈":"做陰瑜珈",	
-            "熱瑜珈":"做熱瑜珈",	
-            "修復瑜珈":"做修復瑜珈",
+            "瑜珈教室":"",
+            "家裡":"",
+            "戶外":"",	
+            "健身房":"",
         },
     },
 
     {
-        question: "4.做瑜珈的地點？",
+        question: "5.選擇瑜珈用品最大考量？",
         ans: {
-            "瑜珈教室":"1",
-            "家裡":"2",
-            "戶外":"3",	
-            "健身房":"4",
-        },
-    },
-
-    {
-        question: "5.你做瑜珈的頻率？",
-        ans: {
-            "第一次練習":"5",	
-            "1-2次/周":"6",	
-            "3-4次/周":"7",	
-            "幾乎每天":"8",
+            "希望是環保材質":["材質可以選擇","NR 天然橡膠","，只滑效果好，但重量較重、價格高。"],	
+            "比較在意價格":["材質可以選擇","PVC 聚氯乙烯","，價格便宜、耐用。"],	
+            "希望很輕便":["材質可以選擇","TPE 熱塑性彈性體","，輕便、彈性較佳。"],	
+            
+            
         },
     },
 
@@ -145,9 +168,9 @@ $('#btnv').on('click',function(){
 
     var todo={};
 
-    todo[countQ]=ans;
+    // todo[countQ]=ans;
 
-    data.push(todo);
+    data.push(ans);
 
     // updateList(data);
     localStorage.setItem('listData', JSON.stringify(data));
@@ -176,7 +199,7 @@ function buildQuiz(){
         str +=
         `<div class="btn-wrap col-6 d-flex justify-content-center animate__animated animate__fadeInUp">
 
-        <button type="button" class="btn_l choice" value="${ansSet[i]}">${i}</button>
+        <button type="button" class="btn_l choice" value="${i}">${i}</button>
 
         </div>`;
 
