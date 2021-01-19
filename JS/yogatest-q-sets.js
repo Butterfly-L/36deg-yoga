@@ -22,9 +22,6 @@ function goBack(){
 
     }
 
-    // if(countQ < 5){
-    //     window.location.href="yogatest-q.html";
-    // }
 
     if (countQ == 5){     
         window.location.href="yogatest-result.html";

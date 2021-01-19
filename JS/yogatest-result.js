@@ -151,20 +151,20 @@ const myQuestions = [
 
     "yogamatProduct":{
             "希望是環保材質":{
-                "img":"../img/yogacontent/product_01.jpg",
+                "img":"./img/yogacontent/product_01.jpg",
                 "product":"環保瑜珈墊",
                 "price":"NT$ 1,800",
                
             },
     
             "比較在意價格":{
-                "img":"../img/yogacontent/product_02.jpg",
+                "img":"./img/yogacontent/product_02.jpg",
                 "product":"防滑瑜珈墊",
                 "price":"NT$ 900",
                
             },
             "希望很輕便":{
-                "img":"../img/yogacontent/product_04.jpg",
+                "img":"./img/yogacontent/product_04.jpg",
                 "product":"輕便瑜珈墊",
                 "price":"NT$ 1,200",
                 
