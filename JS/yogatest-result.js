@@ -112,12 +112,12 @@ const myQuestions = [
     },
 
     "img":{
-        "熱瑜珈":"../img/yogatest/yoga-0.jpg",
-        "流動瑜珈":"../img/yogatest/yoga-1.jpg",
-        "阿斯坦加瑜珈":"../img/yogatest/yoga-2.jpg",
-        "哈達瑜伽":"../img/yogatest/yoga-3.jpg",
-        "陰瑜珈":"../img/yogatest/yoga-4.jpg",
-        "修復瑜珈":"../img/yogatest/yoga-5.jpg",
+        "熱瑜珈":"./img/yogatest/yoga-0.jpg",
+        "流動瑜珈":"./img/yogatest/yoga-1.jpg",
+        "阿斯坦加瑜珈":"./img/yogatest/yoga-2.jpg",
+        "哈達瑜伽":"./img/yogatest/yoga-3.jpg",
+        "陰瑜珈":"./img/yogatest/yoga-4.jpg",
+        "修復瑜珈":"./img/yogatest/yoga-5.jpg",
 
     },
     "yogamat":{
