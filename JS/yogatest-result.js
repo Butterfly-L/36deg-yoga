@@ -214,9 +214,8 @@ const myQuestions = [
 
     //圖片
     $('#yoga-style-img').attr("src",recommendYogaDes['img'][recommendYoga]);
-    // $('#yoga-mat1-img').attr("src",recommendYogaDes['img'][recommendYoga]);
-    // $('#yoga-mat2-img').attr("src",recommendYogaDes['img'][recommendYoga]);
-
+    $('#yoga-mat1-img').attr("src",recommendYogaDes['yogamatProduct'][key4]['img']);
+ 
 
     //media size
 
